@@ -1,1 +1,7 @@
 kubectl get pods
+
+kubectl describe pod "pod-name"
+
+kubectl run redis --image=redis --dry-run=client -o yaml > redis.yaml
+
+kubectl create -f redis.yaml
